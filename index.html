@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineer Portfolio</title>
+    <meta name="description" content="Professional Data Engineer Portfolio showcasing ETL pipelines, data warehousing, and analytics solutions">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="navbar">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-sun" id="lightIcon"></i>
+                    <i class="fas fa-moon" id="darkIcon" style="display: none;"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center min-vh-100 pt-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-center text-lg-start mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold hero-title">Hi, I'm <br><span class="highlight">Devvrat Rajesh Mungekar</span></h1>
+                    <h2 class="h4 mb-3 hero-subtitle">Data Scientist | Data Engineer | AI Engineer</h2>
+                    <p class="lead hero-description mb-4">Engineer by structure, Scientist by curiosity, and AI innovator by passion - I design systems that think and scale.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start hero-buttons">
+                        <a href="#projects" class="btn btn-warning btn-lg text-dark">View Projects</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="data-flow-animation">
+                        <div class="data-node" data-tooltip="Azure Data Lake Gen 2">
+                            <img src="images/azure-data-lake-storage.png" alt="Data Sources" class="node-icon">
+                          </div>
+                          <div class="data-pipeline"></div>
+                          <div class="data-node" data-tooltip="Azure Data Factory">
+                            <img src="images/azure-data-factory.png" alt="ETL Process" class="node-icon">
+                          </div>
+                          <div class="data-pipeline"></div>
+                          <div class="data-node" data-tooltip="Azure Synapse Analytics">
+                            <img src="images/azure-synapse-analytics.png" alt="Data Warehouse" class="node-icon">
+                          </div>
+                          <div class="data-pipeline"></div>
+                          <div class="data-node" data-tooltip="Azure AI Foundry">
+                            <img src="images/azure-ai-foundry.png" alt="Analytics" class="node-icon">
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about py-5" data-theme-section>
+        <div class="container">
+            <h2 class="section-title mb-5">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <p class="fs-5 mb-3">I'm a data-driven professional at the intersection of engineering, science, and AI — building scalable pipelines, crafting intelligent models, and deploying real-time solutions in the cloud.</p>
+                    <p class="fs-5 mb-3">With a strong foundation in modern data architectures and machine learning, I specialize in designing end-to-end systems that transform raw data into actionable intelligence. My expertise spans cloud platforms, big data processing, and AI integration — enabling organizations to harness data for smarter decisions and intelligent automation.</p>
+                    <div class="row text-center about-stats gy-4">
+                        <div class="col-md-4">
+                            <div class="stat h-100">
+                                <h3>2+</h3>
+                                <p>Years<br>Experience</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat h-100">
+                                <h3>10+</h3>
+                                <p>Data Pipelines<br>Built</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="stat h-100">
+                                <h3>10+</h3>
+                                <p>Technologies<br>Mastered</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex justify-content-center align-self-start">
+                    <div class="profile-card p-4">
+                        <div class="profile-avatar mb-3">
+                            <img src="images/linkedinprofile.jpeg" alt="Devvrat Rajesh Mungekar" class="img-fluid">
+                        </div>
+                        <h3>Devvrat Rajesh Mungekar</h3>
+                        <p>Data Scientist at LTIMindtree Canada</p>
+                        <div class="d-flex justify-content-center gap-2 profile-links">
+                            <a href="https://www.linkedin.com/in/devvrat-mungekar/" class="social-link" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Devvrat53" class="social-link" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://leetcode.com/u/devvrat53/" class="social-link" data-tooltip="LeetCode"><img src="images/leetcode.png" alt="LeetCode" style="width: 16px; height: 16px;"></a>
+                            <a href="https://www.kaggle.com/devvratmungekar" class="social-link" data-tooltip="Kaggle"><i class="fab fa-kaggle"></i></a>
+                            <a href="https://public.tableau.com/app/profile/devvrat.mungekar/vizzes" class="social-link" data-tooltip="Tableau"><img src="images/tableau.png" alt="Tableau" style="width: 16px; height: 16px;"></a>
+                            <a href="mailto:devvratmungekar@gmail.com" class="social-link" data-tooltip="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills py-5" data-theme-section>
+        <div class="container">
+            <h2 class="section-title mb-5">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-category p-4 h-100">
+                        <h3 class="mb-4"><i class="fas fa-database me-2"></i>Data Storage & Warehousing</h3>
+                        <div class="skill-item mb-2"><img src="images/azure-sql.png" alt="Azure SQL" class="skill-icon"><span>Azure SQL</span></div>
+                        <div class="skill-item mb-2"><img src="images/azure-postgresql.png" alt="Azure PostgreSQL" class="skill-icon"><span>Azure PostgreSQL</span></div>
+                        <div class="skill-item mb-2"><img src="images/azure-data-lake-storage.png" alt="Azure Data Lake Gen 2" class="skill-icon"><span>Azure Data Lake Gen 2</span></div>
+                        <div class="skill-item mb-2"><img src="images/azure-synapse-analytics.png" alt="Synapse Analytics" class="skill-icon"><span>Azure Synapse Analytics</span></div>
+                        <div class="skill-item mb-2"><img src="images/mongodb.png" alt="MongoDB" class="skill-icon"><span>MongoDB (NoSQL)</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-category p-4 h-100">
+                        <h3 class="mb-4"><i class="fas fa-code me-2"></i>Programming & ETL</h3>
+                        <div class="skill-item mb-2"><img src="images/python.png" alt="Python" class="skill-icon"><span>Python</span></div>
+                        <div class="skill-item mb-2"><img src="images/pyspark.png" alt="PySpark" class="skill-icon"><span>PySpark</span></div>
+                        <div class="skill-item mb-2"><img src="images/sql.png" alt="SQL" class="skill-icon"><span>SQL</span></div>
+                        <div class="skill-item mb-2"><img src="images/kql.png" alt="KQL" class="skill-icon"><span>KQL</span></div>
+                        <div class="skill-item mb-2"><img src="images/shell-script.png" alt="Shell Scripting" class="skill-icon"><span>Shell Scripting/Bash</span></div>
+                        <div class="skill-item mb-2"><img src="images/apache-airflow.png" alt="Apache Airflow" class="skill-icon"><span>Apache Airflow</span></div>
+                        <div class="skill-item mb-2"><img src="images/dbt.png" alt="dbt" class="skill-icon"><span>dbt</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-category p-4 h-100">
+                        <h3 class="mb-4"><i class="fas fa-cloud me-2"></i>Cloud & Big Data</h3>
+                        <div class="skill-item mb-2"><img src="images/microsoft-fabric.png" alt="Microsoft Fabric" class="skill-icon"><span>Microsoft Fabric</span></div>
+                        <div class="skill-item mb-2"><img src="images/azure-data-factory.png" alt="Azure Data Factory" class="skill-icon"><span>Azure Data Factory</span></div>
+                        <div class="skill-item mb-2"><img src="images/azure-databricks.png" alt="Azure Databricks" class="skill-icon"><span>Azure Databricks</span></div>
+                        <div class="skill-item mb-2"><img src="images/azure-ai-foundry.png" alt="Azure AI Foundry" class="skill-icon"><span>Azure AI Foundry</span></div>
+                        <div class="skill-item mb-2"><img src="images/azure-machine-learning.png" alt="Azure Machine Learning" class="skill-icon"><span>Azure Machine Learning</span></div>
+                        <div class="skill-item mb-2"><img src="images/azure-openai.png" alt="Azure OpenAI" class="skill-icon"><span>Azure OpenAI</span></div>
+                        <div class="skill-item mb-2"><img src="images/azure-ai-services.png" alt="Azure AI Services" class="skill-icon"><span>Azure AI Services (Speech, Vision, Language)</span></div>
+                        <div class="skill-item mb-2"><img src="images/docker.png" alt="Docker" class="skill-icon"><span>Docker</span></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-category p-4 h-100">
+                        <h3 class="mb-4"><i class="fas fa-chart-line me-2"></i>Analytics & Visualization</h3>
+                        <div class="skill-item mb-2"><img src="images/tableau.png" alt="Tableau" class="skill-icon"><span>Tableau</span></div>
+                        <div class="skill-item mb-2"><img src="images/streamlit.png" alt="Streamlit" class="skill-icon"><span>Streamlit</span></div>
+                        <div class="skill-item mb-2"><img src="images/plotly.png" alt="Plotly" class="skill-icon"><span>Plotly</span></div>
+                        <div class="skill-item mb-2"><img src="images/geospatial-clustering.png" alt="Geospatial Clustering" class="skill-icon"><span>Geospatial Clustering</span></div>
+                        <div class="skill-item mb-2"><img src="images/pandas.png" alt="Pandas" class="skill-icon"><span>Pandas</span></div>
+                        <div class="skill-item mb-2"><img src="images/numpy.png" alt="NumPy" class="skill-icon"><span>NumPy</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience py-5" data-theme-section>
+        <div class="container">
+            <h2 class="section-title mb-5">Professional Experience</h2>
+            <div class="timeline position-relative mx-auto" style="max-width: 900px;">
+                <!-- Timeline Item 1 (Left) -->
+                <div class="timeline-item timeline-item-left mb-5" data-aos="fade-right">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-5">
+                            <div class="timeline-content p-4">
+                                <div class="timeline-header mb-2">
+                                    <h3 class="mb-1">Data Scientist</h3>
+                                    <span class="company">LTIMindtree Canada</span>
+                                    <span class="duration">2024 - Present</span>
+                                </div>
+                                <ul class="mb-0">
+                                    <li>Architected and optimized scalable ETL pipelines processing 10TB+ data daily using Azure Data Factory, Databricks, and Synapse</li>
+                                    <li>Deployed ML & LLM workflows (Azure ML, Hugging Face, OpenAI) for real-time prediction and audience segmentation</li>
+                                    <li>Improved pipeline throughput by 60% and reduced data processing cost by 40% via performance tuning</li>
+                                    <li>Applied CI/CD practices (Azure DevOps, GitHub) and automated model deployments using Prompt Flow & Kubernetes</li>
+                                    <li>Collaborated cross-functionally to translate ML needs into robust data engineering solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center d-none d-md-block">
+                            <div class="timeline-marker"></div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+                <!-- Timeline Item 2 (Right) -->
+                <div class="timeline-item timeline-item-right mb-5" data-aos="fade-left">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-2 text-center d-none d-md-block">
+                            <div class="timeline-marker"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="timeline-content p-4">
+                                <div class="timeline-header mb-2">
+                                    <h3 class="mb-1">Graduate Teaching Assistant - Big Data</h3>
+                                    <span class="company">Trent University</span>
+                                    <span class="duration">2023 - 2024</span>
+                                </div>
+                                <ul class="mb-0">
+                                    <li>Assisted the course director in teaching Introduction to Databases, Introduction to Data Science, and Data
+                                        Visualization courses, fostering engagement among 160 students</li>
+                                    <li>Mentored students in SQL (MySQL and PostgreSQL), NoSQL (MongoDB), and machine learning pipelines, achieving
+                                        a 99% student success rate</li>
+                                    <li>Supported faculty in research projects, utilizing R for data analysis, and presented findings to stakeholders</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline Item 3 (Left) -->
+                <div class="timeline-item timeline-item-left" data-aos="fade-right">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-5">
+                            <div class="timeline-content p-4">
+                                <div class="timeline-header mb-2">
+                                    <h3 class="mb-1">Software Engineer</h3>
+                                    <span class="company">Capgemini</span>
+                                    <span class="duration">2021 - 2022</span>
+                                </div>
+                                <ul class="mb-0">
+                                    <li>Migrated 85% of custom SQL databases from Java architecture for optimized data storage in product lifecycle
+                                        development</li>
+                                    <li>Improved query execution speed, enabling faster data validation and enhancing storage optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-center d-none d-md-block">
+                            <div class="timeline-marker"></div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects py-5" data-theme-section>
+        <div class="container">
+            <h2 class="section-title mb-5">Projects & Publication</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-card h-100">
+                        <div class="project-image d-flex align-items-center justify-content-center bg-primary" style="height: 180px;">
+                            <i class="fas fa-chart-network fa-2x text-white"></i>
+                        </div>
+                        <div class="project-content p-3">
+                            <h3>Real-time ETL Pipeline</h3>
+                            <p>Built a real-time data pipeline processing 1M+ events daily using Apache Kafka, Spark Streaming, and Snowflake.</p>
+                            <div class="project-tech mb-2">
+                                <span class="badge bg-secondary">Kafka</span>
+                                <span class="badge bg-secondary">Spark</span>
+                                <span class="badge bg-secondary">Snowflake</span>
+                                <span class="badge bg-secondary">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-card h-100">
+                        <div class="project-image d-flex align-items-center justify-content-center bg-success" style="height: 180px;">
+                            <i class="fas fa-warehouse fa-2x text-white"></i>
+                        </div>
+                        <div class="project-content p-3">
+                            <h3>Data Warehouse Migration</h3>
+                            <p>Migrated legacy data warehouse to modern cloud architecture, improving query performance by 300%.</p>
+                            <div class="project-tech mb-2">
+                                <span class="badge bg-secondary">BigQuery</span>
+                                <span class="badge bg-secondary">dbt</span>
+                                <span class="badge bg-secondary">Airflow</span>
+                                <span class="badge bg-secondary">SQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-card h-100">
+                        <div class="project-image d-flex align-items-center justify-content-center bg-info" style="height: 180px;">
+                            <i class="fas fa-robot fa-2x text-white"></i>
+                        </div>
+                        <div class="project-content p-3">
+                            <h3>ML Data Pipeline</h3>
+                            <p>Developed automated ML data pipeline for customer segmentation with 95% accuracy improvement.</p>
+                            <div class="project-tech mb-2">
+                                <span class="badge bg-secondary">Python</span>
+                                <span class="badge bg-secondary">Scikit-learn</span>
+                                <span class="badge bg-secondary">Docker</span>
+                                <span class="badge bg-secondary">AWS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-card h-100">
+                        <div class="project-image d-flex align-items-center justify-content-center bg-warning" style="height: 180px;">
+                            <i class="fas fa-chart-bar fa-2x text-white"></i>
+                        </div>
+                        <div class="project-content p-3">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Created comprehensive analytics dashboard serving 500+ business users with real-time KPIs.</p>
+                            <div class="project-tech mb-2">
+                                <span class="badge bg-secondary">Tableau</span>
+                                <span class="badge bg-secondary">PostgreSQL</span>
+                                <span class="badge bg-secondary">Python</span>
+                                <span class="badge bg-secondary">REST API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications py-5" data-theme-section>
+        <div class="container">
+            <h2 class="section-title mb-5">Certifications</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Certification Card 1 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="project-card h-100 text-center">
+                        <img src="images/udemy.jpg" alt="Udemy" class="img-fluid my-3" style="height:60px; object-fit:contain;">
+                        <div class="project-content p-3">
+                            <h3 class="mb-2" style="font-size:1.1rem;">Azure Databricks & Spark For Data Engineers: Hands-on Project</h3>
+                            <a href="https://www.udemy.com/certificate/UC-7dfc21d2-e570-4166-96c1-1929307ed0ad/" class="credential-btn" target="_blank">Show credential <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certification Card 2 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="project-card h-100 text-center">
+                        <img src="images/udemy.jpg" alt="Udemy" class="img-fluid my-3" style="height:60px; object-fit:contain;">
+                        <div class="project-content p-3">
+                            <h3 class="mb-2" style="font-size:1.1rem;">Azure Synapse Analytics For Data Engineers: Hands-on Project</h3>
+                            <a href="https://www.udemy.com/certificate/UC-3f09e42b-305c-4dac-9297-2da8a81f2cdf/" class="credential-btn" target="_blank">Show credential <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certification Card 3 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="project-card h-100 text-center">
+                        <img src="images/udemy.jpg" alt="Udemy" class="img-fluid my-3" style="height:60px; object-fit:contain;">
+                        <div class="project-content p-3">
+                            <h3 class="mb-2" style="font-size:1.1rem;">Azure Data Factory For Data Engineers</h3>
+                            <a href="https://www.udemy.com/certificate/UC-2a5624bc-b313-4bfe-b56c-494b4df0379b/" class="credential-btn" target="_blank">Show credential <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certification Card 4 -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="project-card h-100 text-center">
+                        <img src="images/aws.png" alt="AWS" class="img-fluid my-3" style="height:60px; object-fit:contain;">
+                        <div class="project-content p-3">
+                            <h3 class="mb-2" style="font-size:1.1rem;">AWS Certified Cloud Practitioner</h3>
+                            <a href="https://www.credly.com/badges/b367a86a-ffdd-44e7-8f03-b6605bd2aed2/public_url" class="credential-btn" target="_blank">Show credential <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5" data-theme-section>
+        <div class="container">
+            <h2 class="section-title mb-5">Get In Touch</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h3 class="mb-3">Let's Connect</h3>
+                    <p class="mb-4">I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center mb-2"><i class="fas fa-envelope me-2 text-primary"></i><span>devvratmungekar53@gmail.com</span></div>
+                        <div class="d-flex align-items-center mb-2"><i class="fas fa-phone me-2 text-primary"></i><span>+1 (249) 876-6843</span></div>
+                        <div class="d-flex align-items-center"><i class="fas fa-map-marker-alt me-2 text-primary"></i><span>Calgary, AB</span></div>
+                    </div>
+                    <div class="mb-4">
+                        <a href="https://1drv.ms/b/c/40c6d11f340a6a05/EQVqCjQf0cYggECNiwQAAAABNpUZsX6xATU4jx9cGoMEuA?e=OiSizb&download=1" class="btn btn-warning btn-lg text-dark" download>
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                    </div>
+                    <div class="d-flex gap-2 social-links">
+                        <a href="https://www.linkedin.com/in/devvrat-mungekar/" class="social-link" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Devvrat53" class="social-link" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://leetcode.com/u/devvrat53/" class="social-link" data-tooltip="LeetCode"><img src="images/leetcode.png" alt="LeetCode" style="width: 16px; height: 16px;"></a>
+                        <a href="https://www.kaggle.com/devvratmungekar" class="social-link" data-tooltip="Kaggle"><i class="fab fa-kaggle"></i></a>
+                        <a href="https://public.tableau.com/app/profile/devvrat.mungekar/vizzes" class="social-link" data-tooltip="Tableau"><img src="images/tableau.png" alt="Tableau" style="width: 16px; height: 16px;"></a>
+                        <!-- <a href="#" class="social-link"><i class="fab fa-medium"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Devvrat Rajesh Mungekar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+</body>
+</html> 
