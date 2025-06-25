@@ -520,6 +520,9 @@ section {
     box-shadow: 0 0 18px 0 rgba(var(--bs-primary-rgb), 0.18), 0 0 0 1px var(--border-color);
     border: 1px solid var(--border-color);
     transition: all 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-card:hover {
@@ -541,6 +544,10 @@ section {
 }
 
 .project-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 1 auto;
     padding: 1.5rem;
 }
 
@@ -552,9 +559,7 @@ section {
 }
 
 .project-content p {
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
+    margin-bottom: 0.5rem;
 }
 
 .project-tech {
@@ -562,6 +567,7 @@ section {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-bottom: 1.5rem;
+    margin-top: auto;
 }
 
 .tech-tag {
@@ -576,6 +582,7 @@ section {
 .project-links {
     display: flex;
     gap: 1rem;
+    margin-top: 0.5rem;
 }
 
 .project-link {
@@ -1008,4 +1015,9 @@ section {
     border: none;
     text-decoration: none;
     box-shadow: none;
+}
+
+section[data-theme-section],
+#about, #skills, #experience, #projects, #certifications, #contact {
+    scroll-margin-top: 90px;
 } 
