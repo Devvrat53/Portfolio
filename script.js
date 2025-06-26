@@ -435,4 +435,20 @@ const aboutObserver = new IntersectionObserver((entries) => {
 
 if (aboutSection) {
     aboutObserver.observe(aboutSection);
-} 
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Auto-collapse mobile navbar on nav link click
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  const navbarCollapse = document.getElementById('navbarNav');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      // If the toggler is visible (mobile menu is open)
+      if (window.getComputedStyle(navbarToggler).display !== 'none') {
+        navbarToggler.click(); // Collapse the menu
+      }
+    });
+  });
+}); 
